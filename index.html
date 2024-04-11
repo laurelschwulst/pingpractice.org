@@ -3,25 +3,125 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css?333" />
     <title>Ping Practice</title>
   </head>
 
-  <body class="fadeee home">
+  <body class="home">
     <div class="everything">
-      <nav id="ping-practice"></nav>
+      <nav id="ping-practice" class="hide">
+        <a href="#" class="home-link">Ping Practice</a>
+      </nav>
       <main>
-        <nav id="primary"></nav>
-        <figure>
-          <img src="assets/images/pp.png" />
-          <figcaption><i>Ping Practice</i></figcaption>
+        <nav id="primary" class="hide">
+          <a href="#about" class="about-link">About</a>
+          <a href="#method" class="method-link">Method</a>
+          <a href="#app" ckass="app-link">App</a>
+          <a href="#people" class="people-link">People</a>
+          <a href="#contact" class="contact-link">Contact</a>
+        </nav>
+
+        <figure class="pp">
+          <img
+            src="assets/images/pp-ping-ping-transparent.png"
+            class="overlay"
+          />
+          <img src="assets/images/pp.png" class="original" />
         </figure>
 
-        <p class="gray">
-          <i>Click anywhere to enter →</i>
-        </p>
+        <!-- HOME: START -->
+        <div class="content home">
+          <i>Ping Practice</i>
+          <p class="gray">
+            <i>Click anywhere to enter →</i>
+          </p>
+        </div>
+        <a class="enter" href="#about"></a>
+        <!-- HOME: END -->
 
-        <a class="enter" href="about.html"></a>
+        <!-- ABOUT: START -->
+        <div class="content about hidden">
+          <h1 class="hidden">About</h1>
+
+          <div class="large-text">
+            Certain ideas sing. They resonate in our bodies, touch some
+            invisible place within.
+          </div>
+
+          <p>
+            Sometimes we encounter these ideas out in the world. Other times, we
+            hear them in our minds. Sometimes they are language, other times
+            feelings or thoughts. Whatever they are — they’re meaningful energy.
+          </p>
+          <p>
+            In the Ping Practice universe, we call these resonances “Pings”.
+            <sup>1234</sup>
+          </p>
+          <p>
+            What – if anything – these “Pings” might mean and how we might use
+            them is rarely clear in the moment. Their meaning often unfolds and
+            evolves over time.
+          </p>
+          <p>
+            The fleeting nature of these Pings, and the uncertainty of their
+            significance, can make deciding if and where to hold them (and how
+            to work with them) unclear.
+          </p>
+          <p>Ping Practice emerged precisely from this place.</p>
+          <p>
+            Ping Practice is a journaling
+            <a href="#method" class="method-link">method</a> and
+            <a href="#app" class="app-link">app</a> designed to help you
+            synthesize these fleeting bits of resonance into wisdom you are
+            inspired and equipped to embody.
+          </p>
+          <p>
+            The method emerged through years of experimentation orbiting a
+            central question:
+          </p>
+          <p>
+            <b
+              >How might I locate what I learn and experience in ways that equip
+              me to apply them in the fleeting moments when I sense
+              opportunities to do so?</b
+            >
+          </p>
+          <p>
+            Ping Practices continues to be shaped by an expansive body of
+            pre-existing thought and through conversations with
+            <a href="people.html">people</a> who see making-meaning from what
+            they experience as an act of survival.
+          </p>
+
+          <hr />
+
+          <footer>
+            <ol>
+              <li>
+                <a
+                  href="https://anotherdayinthedome.substack.com/p/pings-from-the-universe"
+                  >https://anotherdayinthedome.substack.com/p/pings-from-the-universe</a
+                >
+              </li>
+              <li>
+                <a href="https://www.are.na/block/24322667"
+                  >https://www.are.na/block/24322667</a
+                >
+              </li>
+              <li>
+                <a href="https://ping-practice.gitbook.io/pings/method#ping"
+                  >https://ping-practice.gitbook.io/pings/method#ping</a
+                >
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=SUcwBG3iskM"
+                  >https://www.youtube.com/watch?v=SUcwBG3iskM</a
+                >
+              </li>
+            </ol>
+          </footer>
+        </div>
+        <!-- ABOUT: END -->
       </main>
       <script src="assets/js/jquery.min.js"></script>
       <script src="assets/js/script.js"></script>
