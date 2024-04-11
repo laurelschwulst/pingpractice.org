@@ -135,7 +135,14 @@ a.enter {
 
 nav#bottom {
   margin-top: 2em;
-  margin-bottom: 4.5em;
+  margin-bottom: 0.5em;
+  display: grid;
+  grid-gap: 12.5px;
+  grid-template-columns: 1fr 1fr;
+}
+
+nav#bottom.simple {
+  grid-template-columns: 1fr;
 }
 
 nav#bottom a {
@@ -356,7 +363,9 @@ figure.pp {
   position: relative;
 }
 
-figure.pp .overlay {
+figure.pp .overlay,
+figure.pp .overlay-method,
+figure.pp .overlay-app {
   position: absolute;
   top: 0;
   left: 0;
@@ -432,15 +441,27 @@ body.fadeee.out .everything .hide {
 }
 
 .content.home.hidden,
-.content.about.hidden {
+.content.about.hidden,
+.content.method.hidden,
+body.method .content.method.hidden,
+.content.app.hidden,
+.content.people.hidden,
+.content.contact.hidden {
   opacity: 0;
   transition: 0.5s ease opacity;
 }
 
 .content.home,
-.content.about {
+.content.about,
+.content.app,
+.content.people,
+.content.contact {
   opacity: 1;
   transition: 0.5s ease opacity;
+}
+
+.content {
+  display: block !important;
 }
 
 .content.goodbye {
@@ -450,19 +471,38 @@ body.fadeee.out .everything .hide {
 body.home nav#primary,
 body.home nav#ping-practice,
 body.home img.overlay,
-body.method img.overlay {
+body.method img.overlay,
+body.home img.overlay-app,
+body.about img.overlay-app,
+img.overlay,
+img.overlay-method,
+img.overlay-app {
   opacity: 0;
   transition: 0.5s ease opacity;
 }
 
 body.about nav#primary,
 body.about nav#ping-practice,
-body.about .content.about,
-body.about img.overlay,
 body.method nav#primary,
 body.method nav#ping-practice,
-body.method .content.about,
-body.method img.overlay-method {
+body.about img.overlay,
+body.method img.overlay-method,
+body.app img.overlay-app,
+body.about .content.about,
+body.method .content.method,
+body.app .content.app,
+body.people .content.people,
+body.contact .content.contact {
   opacity: 1;
   transition: 0.5s ease opacity;
+}
+
+a.button {
+  height: 10em;
+  border: 1px solid black;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
