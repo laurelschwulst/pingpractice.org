@@ -26,6 +26,7 @@ $(function () {
   // LOW LINKS, SCROLL TO TOP
 
   $("a.button, a.low-link").click(function () {
+    event.preventDefault();
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
@@ -83,23 +84,19 @@ $(function () {
     $("body").removeClass("method");
     $("body").removeClass("app");
     $("body").removeClass("people");
-    $("body").removeClass("contact");
     $(".content.method").addClass("hidden");
     $(".content.app").addClass("hidden");
     $(".content.people").addClass("hidden");
-    $(".content.contact").addClass("hidden");
     $("nav#primary a.method-link").removeClass("current");
     $("nav#primary a.app-link").removeClass("current");
     $("nav#primary a.people-link").removeClass("current");
-    $("nav#primary a.contact-link").removeClass("current");
     $("nav#primary a.about-link").addClass("current");
-    $(".content.method").addClass("goodbye");
-    $(".content.about").addClass("goodbye");
-    $(".content.app").addClass("goodbye");
-    $(".content.people").addClass("goodbye");
-    $(".content.contact").addClass("goodbye");
     setTimeout(function () {
+      $(".content.about").addClass("hidden");
       $(".content.about").removeClass("goodbye");
+      $(".content.method").addClass("goodbye");
+      $(".content.app").addClass("goodbye");
+      $(".content.people").addClass("goodbye");
     }, 500);
     setTimeout(function () {
       $("body").addClass("about");

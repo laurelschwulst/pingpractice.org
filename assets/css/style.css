@@ -506,3 +506,12 @@ a.button {
   justify-content: center;
   text-decoration: none;
 }
+
+.citation-needed {
+  font-size: 0.75em;
+}
+
+a.email {
+  opacity: 0.5;
+  text-decoration: none;
+}
