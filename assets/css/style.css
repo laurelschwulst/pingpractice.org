@@ -507,7 +507,8 @@ a.button {
   text-decoration: none;
 }
 
-.citation-needed {
+.citation-needed,
+.citation-found {
   font-size: 0.75em;
 }
 
