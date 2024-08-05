@@ -55,13 +55,13 @@ $(function () {
     $("body").removeClass("method");
     $("body").removeClass("app");
     $("body").removeClass("people");
-    $("body").removeClass("contact");
+    $("body").removeClass("transmissions");
     $("body").addClass("home");
     $(".content.about").addClass("hidden");
     $(".content.method").addClass("hidden");
     $(".content.app").addClass("hidden");
     $(".content.people").addClass("hidden");
-    $(".content.contact").addClass("hidden");
+    $(".content.transmissions").addClass("hidden");
     setTimeout(function () {
       // $(".content.method").addClass("goodbye");
       $("body.home .content.home").removeClass("goodbye");
@@ -72,7 +72,7 @@ $(function () {
       $(".content.method").addClass("goodbye");
       $(".content.app").addClass("goodbye");
       $(".content.people").addClass("goodbye");
-      $(".content.contact").addClass("goodbye");
+      $(".content.transmissions").addClass("goodbye");
       $("a.enter").fadeIn();
     }, 1500);
   });
@@ -111,15 +111,15 @@ $(function () {
     $("body").removeClass("about");
     $("body").removeClass("app");
     $("body").removeClass("people");
-    $("body").removeClass("contact");
+    $("body").removeClass("transmissions");
     $(".content.about").addClass("hidden");
     $(".content.app").addClass("hidden");
     $(".content.people").addClass("hidden");
-    $(".content.contact").addClass("hidden");
+    $(".content.transmissions").addClass("hidden");
     $("nav#primary a.about-link").removeClass("current");
     $("nav#primary a.app-link").removeClass("current");
     $("nav#primary a.people-link").removeClass("current");
-    $("nav#primary a.contact-link").removeClass("current");
+    $("nav#primary a.transmissions-link").removeClass("current");
     $("nav#primary a.method-link").addClass("current");
     setTimeout(function () {
       $(".content.method").addClass("hidden");
@@ -127,7 +127,7 @@ $(function () {
       $(".content.about").addClass("goodbye");
       $(".content.app").addClass("goodbye");
       $(".content.people").addClass("goodbye");
-      $(".content.contact").addClass("goodbye");
+      $(".content.transmissions").addClass("goodbye");
     }, 500);
     setTimeout(function () {
       $("body").addClass("method");
@@ -142,15 +142,15 @@ $(function () {
     $("body").removeClass("about");
     $("body").removeClass("method");
     $("body").removeClass("people");
-    $("body").removeClass("contact");
+    $("body").removeClass("transmissions");
     $(".content.about").addClass("hidden");
     $(".content.method").addClass("hidden");
     $(".content.people").addClass("hidden");
-    $(".content.contact").addClass("hidden");
+    $(".content.transmissions").addClass("hidden");
     $("nav#primary a.about-link").removeClass("current");
     $("nav#primary a.method-link").removeClass("current");
     $("nav#primary a.people-link").removeClass("current");
-    $("nav#primary a.contact-link").removeClass("current");
+    $("nav#primary a.transmissions-link").removeClass("current");
     $("nav#primary a.app-link").addClass("current");
     setTimeout(function () {
       $(".content.about").addClass("hidden");
@@ -159,8 +159,8 @@ $(function () {
       $(".content.method").addClass("goodbye");
       $(".content.people").addClass("hidden");
       $(".content.people").addClass("goodbye");
-      $(".content.contact").addClass("hidden");
-      $(".content.contact").addClass("goodbye");
+      $(".content.transmissions").addClass("hidden");
+      $(".content.transmissions").addClass("goodbye");
       $(".content.app").removeClass("goodbye");
     }, 500);
     setTimeout(function () {
@@ -176,15 +176,15 @@ $(function () {
     $("body").removeClass("about");
     $("body").removeClass("method");
     $("body").removeClass("app");
-    $("body").removeClass("contact");
+    $("body").removeClass("transmissions");
     $(".content.about").addClass("hidden");
     $(".content.method").addClass("hidden");
     $(".content.app").addClass("hidden");
-    $(".content.contact").addClass("hidden");
+    $(".content.transmissions").addClass("hidden");
     $("nav#primary a.about-link").removeClass("current");
     $("nav#primary a.method-link").removeClass("current");
     $("nav#primary a.app-link").removeClass("current");
-    $("nav#primary a.contact-link").removeClass("current");
+    $("nav#primary a.transmissions-link").removeClass("current");
     $("nav#primary a.people-link").addClass("current");
     setTimeout(function () {
       $(".content.about").addClass("hidden");
@@ -193,8 +193,8 @@ $(function () {
       $(".content.method").addClass("goodbye");
       $(".content.app").addClass("hidden");
       $(".content.app").addClass("goodbye");
-      $(".content.contact").addClass("hidden");
-      $(".content.contact").addClass("goodbye");
+      $(".content.transmissions").addClass("hidden");
+      $(".content.transmissions").addClass("goodbye");
       $(".content.people").removeClass("goodbye");
     }, 500);
     setTimeout(function () {
@@ -203,9 +203,9 @@ $(function () {
     }, 1500);
   });
 
-  // ANY PAGE -> CONTACT
+  // ANY PAGE -> TRANSMISSIONS
 
-  $("a.contact-link").click(function (e) {
+  $("a.transmissions-link").click(function (e) {
     e.preventDefault();
     $("body").removeClass("about");
     $("body").removeClass("method");
@@ -219,7 +219,7 @@ $(function () {
     $("nav#primary a.method-link").removeClass("current");
     $("nav#primary a.app-link").removeClass("current");
     $("nav#primary a.people-link").removeClass("current");
-    $("nav#primary a.contact-link").addClass("current");
+    $("nav#primary a.transmissions-link").addClass("current");
     setTimeout(function () {
       $(".content.about").addClass("hidden");
       $(".content.about").addClass("goodbye");
@@ -229,11 +229,11 @@ $(function () {
       $(".content.app").addClass("goodbye");
       $(".content.people").addClass("hidden");
       $(".content.people").addClass("goodbye");
-      $(".content.contact").removeClass("goodbye");
+      $(".content.transmissions").removeClass("goodbye");
     }, 500);
     setTimeout(function () {
-      $("body").addClass("contact");
-      $(".content.contact").removeClass("hidden");
+      $("body").addClass("transmissions");
+      $(".content.transmissions").removeClass("hidden");
     }, 1500);
   });
 });
