@@ -90,6 +90,14 @@ strong {
   font-family: "garamondno8bold";
 }
 
+ul {
+  padding-left: 0.75em;
+}
+
+li {
+  padding-left: 0.25em;
+}
+
 .large-text {
   font-size: 1.75em;
   font-style: normal;
@@ -151,7 +159,8 @@ nav#bottom a {
 }
 
 nav#primary a,
-nav#lateral a {
+nav#lateral a,
+nav#transmissions a {
   color: black;
   font-style: normal;
   font-family: "garamondno8italic";
@@ -160,7 +169,8 @@ nav#lateral a {
   text-decoration: none;
 }
 
-nav#primary a.current {
+nav#primary a.current,
+nav#transmissions a {
   text-decoration: underline;
 }
 
@@ -519,4 +529,244 @@ a.button {
 a.email {
   opacity: 0.5;
   text-decoration: none;
+}
+
+p.transmission a {
+  font-family: "garamondno8italic";
+  /* background: #f0f0f0; */
+  border: 0;
+  color: black;
+  transition: all 0.5s ease;
+}
+
+p.transmission a:hover {
+  /* color: #1849cc; */
+}
+
+span.ping {
+  display: inline-block;
+  height: 1.25em;
+  width: 1.25em;
+  border-radius: 50%;
+  background: #f0f0f0;
+  margin-right: 0.5em;
+  vertical-align: -0.25em;
+  transition: all 0.5s ease;
+}
+
+p.transmission:hover span.ping {
+  /* background: #1849cc; */
+}
+
+h1 span.ping {
+  margin-right: 0.1em;
+}
+
+h1.transmission {
+  font-family: "garamondno8italic";
+  font-weight: normal;
+  /* margin-top: 1.35em; */
+  margin-top: 3.25em;
+  margin-bottom: 1.25em;
+  font-size: 1em;
+  /* color: #1849cc; */
+  /* border-bottom: 1px solid #f0f0f0; */
+}
+
+h1.transmission span.ping {
+  /* background: #1849cc; */
+}
+
+cite.stamp {
+  display: inline-block;
+  color: #1849cc;
+  border: 1px dashed #1849cc;
+  padding: 1em 1.25em;
+  line-height: 1.5;
+  margin: 3.5em 0 2em;
+  margin-left: -0.75em;
+}
+
+cite.stamp a.author {
+  background: transparent;
+  color: #1849cc;
+}
+
+cite {
+  font-size: 0.75em;
+  font-family: "garamondno8regular";
+  font-style: normal;
+}
+
+a.author {
+  /* background: #f0f0f0; */
+  /* text-decoration: none; */
+}
+
+.ping-slideshow div.ping {
+  display: none;
+}
+
+.ping-slideshow div.ping.active {
+  display: flex;
+}
+
+figure.photo {
+  margin: 1.75em 0;
+}
+
+div.ping {
+  display: flex;
+  align-items: center;
+  /* text-align: center; */
+  /* justify-content: center; */
+  border-width: 10px;
+  border-style: solid;
+  /* border-color: #f0f0f0; */
+  border-color: #f0f0f0;
+  /* border-color: rgba(0, 0, 0, 0.15); */
+  background: #f0f0f0;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  padding: 25px;
+  height: 80vw;
+  width: 80vw;
+  max-width: 459px;
+  max-height: 459px;
+  margin: 1.75em 0;
+  position: relative;
+}
+
+.ping-metadata.hidden {
+  display: none;
+}
+
+div.ping.hidden-metadata .ping-metadata {
+  opacity: 0;
+  transition: 0.5s ease opacity;
+}
+
+div.ping.hidden-metadata:hover .ping-metadata {
+  opacity: 1;
+}
+
+div.ping.centered {
+  justify-content: center;
+}
+
+.ping-metadata {
+  position: absolute;
+  right: 1.25em;
+  left: 1.25em;
+  text-align: center;
+  /* opacity: 0.25; */
+  letter-spacing: 0.025em;
+  font-size: 0.75em;
+  font-family: "Courier New", monospace;
+}
+
+.small {
+  letter-spacing: 0.025em;
+  font-size: 0.75em;
+  font-family: "garamondno8italic";
+}
+
+.small.non-italic {
+  font-family: "garamondno8regular";
+  letter-spacing: 0.01em;
+}
+
+.ping-metadata.variation {
+  font-family: "garamondno8italic";
+  text-align: left;
+  top: 1em;
+}
+
+.ping-metadata.id {
+  font-family: "garamondno8italic";
+  text-align: left;
+  bottom: 1em;
+}
+
+div.ping.extra-large .ping-content {
+  font-size: 3.25em;
+  line-height: 1.15;
+  font-family: "garamondno8italic";
+}
+
+div.ping.large .ping-content {
+  font-size: 1.75em;
+  font-family: "garamondno8italic";
+}
+
+div.ping.medium .ping-content {
+  font-size: 1.25em;
+  font-family: "garamondno8italic";
+}
+
+div.ping.small .ping-content {
+  font-size: 0.75em;
+}
+
+.ping-controls {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ping-controls div {
+  cursor: pointer;
+  padding: 1em 2em;
+  display: inline-block;
+}
+
+.ping-slideshow div.ping {
+  margin-bottom: 0;
+}
+
+.ping-roll {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.25em;
+  width: 100%;
+}
+
+.ping-roll .ping-metadata {
+  display: none;
+}
+
+.ping-roll div.ping {
+  width: 100%;
+  height: auto;
+  font-size: 0.31em;
+  border: 0;
+  aspect-ratio: 1/ 1;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.ping-roll.special div.ping {
+  align-items: flex-start;
+  font-size: 0.25em;
+}
+
+.ping-roll.special div.ping .ping-content {
+  line-height: 1.25;
+}
+
+.ping-list div.ping {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  display: block;
+}
+
+.ping-list .ping-content {
+  margin-bottom: 1em;
+  font-size: 1.25em;
+  font-family: "garamondno8italic";
+}
+
+.ping-list .ping-metadata {
+  position: static;
 }

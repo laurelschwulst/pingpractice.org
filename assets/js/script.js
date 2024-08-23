@@ -236,4 +236,13 @@ $(function () {
       $(".content.transmissions").removeClass("hidden");
     }, 1500);
   });
+
+  // stamp rotator
+
+  const stamps = document.querySelectorAll(".stamp");
+
+  stamps.forEach((stamp) => {
+    const randomRotation = Math.random() * 10 - 5; // Generates a random number between -5 and 5
+    stamp.style.transform = `rotate(${randomRotation}deg)`;
+  });
 });

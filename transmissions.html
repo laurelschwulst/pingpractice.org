@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Ping Practice" />
+    <meta property="og:image" content="assets/images/pp.png" />
+    <link rel="stylesheet" href="assets/css/style.css?333" />
+    <style>
+      .nonclick a {
+        pointer-events: none;
+      }
+    </style>
+    <title>Ping Practice</title>
+  </head>
+
+  <body class="transmissions">
+    <div class="everything">
+      <nav id="ping-practice" class="nonclick">
+        <a href="#" class="home-link">Ping Practice</a>
+      </nav>
+      <main>
+        <nav id="primary" class="nonclick">
+          <a href="#about" class="about-link">About</a>
+          <a href="#method" class="method-link">Method</a>
+          <a href="#app" class="app-link">App</a>
+          <a href="#people" class="people-link">People</a>
+          <a href="#transmissions" class="transmissions-link current"
+            >Transmissions</a
+          >
+        </nav>
+
+        <figure class="pp">
+          <img src="assets/images/pp-app-transparent.png" class="overlay-app" />
+          <img
+            src="assets/images/pp-method-transparent.png"
+            class="overlay-method"
+          />
+          <img
+            src="assets/images/pp-people-transparent.png"
+            class="overlay-people"
+          />
+          <img
+            src="assets/images/pp-ping-ping-transparent.png"
+            class="overlay"
+          />
+          <img src="assets/images/pp.png" class="original" />
+        </figure>
+
+        <!-- TRANSMISSIONS: START -->
+        <div class="content transmissions">
+          <h1 class="hidden">Transmissions</h1>
+
+          <p class="transmission">
+            <span class="ping"></span>
+            <a href="transmission-ping.html">What is a ping?</a>
+          </p>
+
+          <p class="transmission">
+            <span class="ping"></span>
+            <a href="transmission-ping-practice.html">What is ping practice?</a>
+          </p>
+
+          <p class="transmission">
+            <span class="ping"></span>
+            <a href="transmission-app.html">Why an app?</a>
+          </p>
+
+          <p class="transmission">
+            <span class="ping"></span>
+            <a href="transmission-text.html">Why text?</a>
+          </p>
+
+          <p class="transmission">
+            <span class="ping"></span>
+            <a href="transmission-ai.html">What about AI?</a>
+          </p>
+
+          <p class="transmission">
+            <span class="ping"></span>
+            <a href="transmission-local-syncing.html"
+              >Local first, syncing second</a
+            >
+          </p>
+
+          <p class="transmission">
+            <span class="ping"></span>
+            <a href="transmission-image.html">Our image — two waves</a>
+          </p>
+        </div>
+        <br />
+
+        <nav id="bottom" class="simple nonclick">
+          <!-- <a href="#people" class="people-link button">← “People”</a> -->
+          <a href="#about" class="about-link button">“About” →</a>
+        </nav>
+
+        <!-- TRANSMISSIONS: END -->
+      </main>
+
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/script.js"></script>
+    </div>
+  </body>
+</html>
