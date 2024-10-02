@@ -770,3 +770,11 @@ div.ping.small .ping-content {
 .ping-list .ping-metadata {
   position: static;
 }
+
+body.privacy main p:first-of-type {
+  margin-top: 0;
+}
+
+body.privacy nav#ping-practice a {
+  opacity: 1;
+}

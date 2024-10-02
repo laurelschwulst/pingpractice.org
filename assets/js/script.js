@@ -1,24 +1,4 @@
 $(function () {
-  // fade out page after link click
-  $("body.fade a").click(function (e) {
-    e.preventDefault();
-    var link = $(this).attr("href");
-    $("body.fade").addClass("out");
-    setTimeout(function () {
-      window.location.href = link;
-    }, 1500);
-  });
-
-  // fadeee out CURRENT page after link click
-  $("body.fadeee a").click(function (e) {
-    e.preventDefault();
-    var link = $(this).attr("href");
-    $("body.fadeee").addClass("out");
-    setTimeout(function () {
-      window.location.href = link;
-    }, 1500);
-  });
-
   // NEW START
   // NEW START
   // NEW START
